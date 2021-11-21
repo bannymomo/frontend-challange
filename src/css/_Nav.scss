@@ -1,0 +1,31 @@
+.Nav {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 0 0.8rem 1rem;
+  display: flex;
+
+  .filter {
+    width: 100%;
+    margin: 10px 30px;
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      border-color: $theme-color;
+    }
+
+    .ant-select-focused .ant-select-selector,
+    .ant-select-selector:focus,
+    .ant-select-selector:active,
+    .ant-select-open .ant-select-selector {
+      border-color: $theme-color !important; // cover antd css
+      box-shadow: none !important; // cover antd css
+    }
+  }
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: rgba($theme-color, 0.8) !important; // cover antd css
+  color: $text-color !important; // cover antd css
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .ant-select-item-option-state {
+  color: #ffffff !important; // cover antd css
+}

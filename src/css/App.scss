@@ -1,0 +1,33 @@
+@import "variables";
+@import "Header";
+@import "Nav";
+@import "Empty";
+@import "Main";
+@import "Footer";
+
+html body {
+  height: auto;
+}
+
+.App {
+  &-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #999;
+  }
+
+  .loading,
+  .error {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .App {
+    &-container {
+      height: 100%;
+      margin: 0;
+    }
+  }
+}

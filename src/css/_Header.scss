@@ -1,0 +1,22 @@
+.Header {
+  padding: 20px;
+  background-color: $theme-color;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .app-logo {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .app-name {
+    font-size: 1.2rem;
+    color: $text-color;
+    font-weight: bold;
+  }
+}
